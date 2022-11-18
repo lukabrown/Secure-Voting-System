@@ -59,11 +59,12 @@ def initDirectedGraph():
 
     G.add_edges_from(voterPairs)
     # print(G.number_of_nodes())
-    pos = nx.spring_layout(G)
-    # nx.draw_networkx_nodes(G, pos, node_size=100)
-    nx.draw_networkx_edges(G, pos, edgelist=G.edges(), edge_color='black')
-    nx.draw_networkx_labels(G, pos, font_size=7)
-    nx.draw(G)
+    # pos = nx.planar_layouts(G)
+    # nx.draw_networkx_nodes(G, pos)
+    # nx.draw_networkx_edges(G, pos, edge_color='black')
+    # nx.draw_networkx_labels(G, pos, font_color='white')
+    # nx.draw_networkx_edge_labels(G, pos)
+    nx.draw(G, with_labels=True)
     plt.show()
 
 
