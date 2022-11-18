@@ -58,14 +58,17 @@ def initDirectedGraph():
                 voterPairs.append((voter1, voter2))
 
     G.add_edges_from(voterPairs)
+    print("is directed acyclic graph? ", nx.is_directed_acyclic_graph(G))
+    nx.draw(G, with_labels=True)
+    plt.show()
+
+    # tests
     # print(G.number_of_nodes())
     # pos = nx.planar_layouts(G)
     # nx.draw_networkx_nodes(G, pos)
     # nx.draw_networkx_edges(G, pos, edge_color='black')
     # nx.draw_networkx_labels(G, pos, font_color='white')
     # nx.draw_networkx_edge_labels(G, pos)
-    nx.draw(G, with_labels=True)
-    plt.show()
 
 
 initDirectedGraph()
