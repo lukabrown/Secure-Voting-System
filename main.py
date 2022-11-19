@@ -9,7 +9,7 @@ class Vote:
     votes = []
     INITIAL_TRUST = 1
 
-    def __init__(self, voterNum, voterName,  voterTimeCast, voterParty, voterIPaddress, voterMACaddress, voterVerifNum, INITIAL_TRUST):
+    def __init__(self, voterNum, voterName,  voterTimeCast, voterParty, voterIPaddress, voterMACaddress, voterVerifNum, INITIAL_TRUST, next1=None, next2=None):
         self.DLnum = voterNum
         self.name = voterName
         self.timeCast = voterTimeCast
@@ -18,6 +18,9 @@ class Vote:
         self.MACaddress = voterMACaddress
         self.verifNum = voterVerifNum
         self.trust = INITIAL_TRUST
+        self.next1 = next1
+        self.next2 = next2
+
 
 # node types
 # validVote = Vote(var_name[0])
