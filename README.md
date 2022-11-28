@@ -19,7 +19,7 @@ How to run:
 
 to clone the code, in the git terminal execute the command:
 
-git clone https://github.com/lukabrown/Cybersecurity-Project.git <targetDirectory>
+git clone https://github.com/lukabrown/Secure-Voting-System.git <targetDirectory>
   
 then, cd into the target directory you input, compile and run the code. (.py file)
 Parameters: Line 143 in the code determines the number of votes that are being generated. Currently the program is set to simulate 250 votes.
