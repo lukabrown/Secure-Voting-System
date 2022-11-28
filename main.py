@@ -1,4 +1,3 @@
-    plt.show()
 import random
 import names
 
