@@ -1,14 +1,23 @@
 import random
-import names
+import string
 
 party_options = ["democrat", "republican", "libertarian", "undecided"]
 electees = {
-  "Democrats" : "Johnnie Fortier", 
-  "Republicans" : "Steven Griffith", 
-  "Libertarians" : "Patricia Cooke", 
-  "Undecided" : "Sean Thomas",
+    "Democrats": "Johnnie Fortier",
+    "Republicans": "Steven Griffith",
+    "Libertarians": "Patricia Cooke",
+    "Undecided": "Sean Thomas",
 }
 
+#creates trivial names to replace the names module creating a realistic full name
+names = ["" for x in range(100)]
+for i in range(100):
+  names[i] = names[i] + random.choice(string.ascii_uppercase)
+  names[i] = names[i] + random.choice(string.ascii_lowercase)
+  names[i] = names[i] + random.choice(string.ascii_lowercase)
+  names[i] = names[i] + random.choice(string.ascii_lowercase)
+  names[i] = names[i] + random.choice(string.ascii_lowercase)
+  names[i] = names[i] + random.choice(string.ascii_lowercase)
 
 def get_vote_data():
   voterInfo = {
