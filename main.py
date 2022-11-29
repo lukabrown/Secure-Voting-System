@@ -10,8 +10,8 @@ electees = {
 }
 
 #creates trivial names to replace the names module creating a realistic full name
-names = ["" for x in range(100)]
-for i in range(100):
+names = ["" for x in range(1000)]
+for i in range(1000):
   names[i] = names[i] + random.choice(string.ascii_uppercase)
   names[i] = names[i] + random.choice(string.ascii_lowercase)
   names[i] = names[i] + random.choice(string.ascii_lowercase)
