@@ -21,7 +21,7 @@ for i in range(100):
 
 def get_vote_data():
   voterInfo = {
-    "name": names.get_full_name(),
+    "name": random.choice(names),
     "party": random.choice(party_options),
     "prop_vote": "Prop " + str(random.randint(1, 8)),
     "vote_time": str(random.randint(7, 18)) + ":" + str(random.randint(0, 5)) + 
